@@ -25,6 +25,8 @@ namespace RestaurantProjectWebV02.Models
         {
         }
 
+        public DbSet<MenuItem> MenuItems { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

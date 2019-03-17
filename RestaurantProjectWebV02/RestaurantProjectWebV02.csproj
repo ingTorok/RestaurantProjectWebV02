@@ -183,6 +183,10 @@
     <Compile Include="Migrations\201903170828012_Identity datamodel TL.Designer.cs">
       <DependentUpon>201903170828012_Identity datamodel TL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903170925115_Add MenuItems table.cs" />
+    <Compile Include="Migrations\201903170925115_Add MenuItems table.Designer.cs">
+      <DependentUpon>201903170925115_Add MenuItems table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -267,6 +271,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903170828012_Identity datamodel TL.resx">
       <DependentUpon>201903170828012_Identity datamodel TL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903170925115_Add MenuItems table.resx">
+      <DependentUpon>201903170925115_Add MenuItems table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
