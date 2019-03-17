@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201903170925115_Add MenuItems table.Designer.cs">
       <DependentUpon>201903170925115_Add MenuItems table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903170937190_Set MenuItems.Name .Description .Price not null.cs" />
+    <Compile Include="Migrations\201903170937190_Set MenuItems.Name .Description .Price not null.Designer.cs">
+      <DependentUpon>201903170937190_Set MenuItems.Name .Description .Price not null.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -274,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903170925115_Add MenuItems table.resx">
       <DependentUpon>201903170925115_Add MenuItems table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903170937190_Set MenuItems.Name .Description .Price not null.resx">
+      <DependentUpon>201903170937190_Set MenuItems.Name .Description .Price not null.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
