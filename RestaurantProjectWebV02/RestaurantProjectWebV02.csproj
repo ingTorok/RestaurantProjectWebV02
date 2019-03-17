@@ -191,6 +191,10 @@
     <Compile Include="Migrations\201903170937190_Set MenuItems.Name .Description .Price not null.Designer.cs">
       <DependentUpon>201903170937190_Set MenuItems.Name .Description .Price not null.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903170939527_Set MenuItems.Name maxlength to 200.cs" />
+    <Compile Include="Migrations\201903170939527_Set MenuItems.Name maxlength to 200.Designer.cs">
+      <DependentUpon>201903170939527_Set MenuItems.Name maxlength to 200.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -281,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903170937190_Set MenuItems.Name .Description .Price not null.resx">
       <DependentUpon>201903170937190_Set MenuItems.Name .Description .Price not null.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903170939527_Set MenuItems.Name maxlength to 200.resx">
+      <DependentUpon>201903170939527_Set MenuItems.Name maxlength to 200.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
