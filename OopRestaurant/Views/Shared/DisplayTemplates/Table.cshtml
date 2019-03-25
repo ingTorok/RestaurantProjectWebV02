@@ -1,0 +1,22 @@
+﻿@model OopRestaurant.Models.Table
+
+<h4>Table</h4>
+<hr />
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Location)
+    </dt>
+
+    <dd>
+        @Html.DropDownListFor(model => model.LocationId, Model.AssignableLocations, " --- ", new { @class = "from-control", disabled = "disabled" })
+    </dd>
+
+</dl>

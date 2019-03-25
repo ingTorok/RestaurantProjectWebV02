@@ -1,0 +1,41 @@
+﻿@model IEnumerable<OopRestaurant.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Menu</h2>
+
+<div class="panel-group" id="menu">
+    @foreach (var category in Model)
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#menu" href="#collapse@(category.Id)">
+                            @Html.DisplayFor(modelItem => category.Name)
+                    </a>
+                 </h3>
+            </div>
+            <div id="collapse@(category.Id)" class="panel-collapse collapse ">
+                <div class="panel-body">
+                    @foreach (var innerMenuItem in category.MenuItems)
+                    {
+                        <h4>
+                            @Html.DisplayFor(modelItem => innerMenuItem.Name)
+                        </h4>
+                        <p>
+                            @Html.DisplayFor(modelItem => innerMenuItem.Description)
+                        </p>
+                        <p>
+                            <strong>@Html.DisplayFor(modelItem => innerMenuItem.Price)</strong>
+                        </p>
+                    }
+                </div>
+
+            </div>
+        </div>
+        
+    }
+ </div>
+
